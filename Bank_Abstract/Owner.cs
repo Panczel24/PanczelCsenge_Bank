@@ -8,8 +8,10 @@ namespace Bank_Abstract
 {
 	internal sealed class Owner
 	{
-		string nev;
+		
 
-		public string Nev { get => nev; set => nev = value; }
+		public string Nev { get; set; }
+
+		
 	}
 }
