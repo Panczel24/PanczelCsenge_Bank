@@ -9,7 +9,7 @@ namespace Bank_Abstract
 	internal abstract class BankAccount : BankingService
 	{
 		double balance;
-		public double Balance { get; }
+		public double Balance { get; protected set; }
 		protected BankAccount(Owner owner) : base(owner)
 		{
 		}
