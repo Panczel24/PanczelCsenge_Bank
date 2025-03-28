@@ -20,5 +20,10 @@ namespace Bank_Abstract
 		}
 
 		public abstract bool Withdraw (double amount); 
+
+		public BankCard NewCard(string cardNumber)
+		{
+			return new BankCard(this.Owner, Balance, cardNumber);
+		}
 	}
 }
