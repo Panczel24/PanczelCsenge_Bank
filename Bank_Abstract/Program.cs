@@ -1,4 +1,5 @@
 ﻿namespace Bank_Abstract
+
 {
 	internal class Program
 	{
