@@ -11,7 +11,7 @@ namespace Bank_Abstract
 		double accountBalance;
 		string cardNumber;
 		public string CarndNumber { get; }
-	public double AccountBalance { get; }
+		public double AccountBalance { get; }
 
 		public BankCard(Owner owner, double accountBalance, string cardNumber) : base(owner)
 		{
@@ -21,9 +21,9 @@ namespace Bank_Abstract
 
 		public bool Purchase(double amount)
 		{
-			if(AccountBalance -amount>= 0)
+			if(accountBalance - amount>= 0)
 			{
-				AccountBalance -= amount;
+				accountBalance -= amount;
 				return true;
 			}
 			return false;
